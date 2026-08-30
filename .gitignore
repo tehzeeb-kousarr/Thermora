@@ -1,0 +1,42 @@
+# ---- Secrets ----
+# backend/.env holds FORTYGUARD_API_KEY, GROQ_API_KEY, and DB credentials
+# (see backend/app/config.py) — never commit real values, only .env.example.
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# ---- Python (backend) ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+
+# ---- Node / Vite (frontend) ----
+node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- Local scratch ----
+*.tmp
+*.bak
